@@ -12,4 +12,7 @@ ZSH_HOME="$HOME/.zsh"
 # Set environment if present
 [[ -f $ZSH_HOME/env.zsh ]] && source $ZSH_HOME/env.zsh
 
+# Add paths to PATH
+[[ -f $ZSH_HOME/path.zsh ]] && source $ZSH_HOME/path.zsh
+
 eval "$(oh-my-posh init zsh --config $HOME/mrfours.json)"
